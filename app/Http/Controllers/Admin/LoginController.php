@@ -158,11 +158,11 @@ class LoginController extends Controller
 
     public function ganti_password_aksi(Request $request){
         $data = $request->all();
-        $email = $data['email'];
+        $username = $data['username'];
         $password = $data['password'];
-        $find = User::where('email', $email)->first();
+        $find = User::where('username', $username)->first();
         if($find){
-            $change = User::where('email', $email)->update(['password' => \Hash::make($password)]);
+            $change = $find->update(['password' => \Hash::make($password)]);
             return redirect()->route('login')->with('success', 'Password berhasil diubah');
         }else{
             return redirect()->route('login')->with('error', 'Username tidak ditemukan');
