@@ -36,6 +36,14 @@
                     <label for="inputNominal" class="form-label">Nominal</label>
                     <input type="number" required class="form-control" name="nominal" id="inputNominal">
                 </div>
+                <div class="col-12">
+                    <input type="radio" onclick="document.getElementById('inputNominal').value = 10000" id="10rb" name="nominal_select" value="10000">
+                    <label for="10rb">Rp10.000</label><br>
+                    <input type="radio" onclick="document.getElementById('inputNominal').value = 20000" id="20rb" name="nominal_select" value="20000">
+                    <label for="20rb">Rp20.000</label><br>
+                    <input type="radio" onclick="document.getElementById('inputNominal').value = 50000" id="50rb" name="nominal_select" value="50000">
+                    <label for="50rb">Rp50.000</label>
+                </div>
                 <div class="col-12 text-center">
                     <button type="submit" class="btn btn-primary">DONASI</button>
                 </div>
