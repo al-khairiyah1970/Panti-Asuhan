@@ -181,7 +181,7 @@
             </div>
         </div>
     @endif
-            
+
 
 <div class="container mt-5">
 <h2>ZAKAT PROFESI</h2>
@@ -194,12 +194,12 @@
         <label for="pendapatanBulanan" class="form-label">Pendapatan Bulanan (Rp):</label>
         <input type="number" class="form-control" id="pendapatanBulanan" placeholder="masukkan total pendapatan bulanan anda" required>
     </div>
-    
+
     <div class="mb-2">
         <label for="syaratNisab" class="form-label">Nisab Bulanan (Rp):</label>
         <input type="number" class="form-control" id="syaratNisab" placeholder="mohon isi syarat nisab terbaru" required>
     </div>
-    
+
     <button type="submit" class="btn btn-success">Hitung Zakat</button>
 </form>
 
@@ -240,10 +240,10 @@ document.getElementById('formZakat').addEventListener('submit', function(e) {
     <footer class="bg-success py-5 mt-5">
         <div class="container text-light text-center">
             <p class="display-10 mb-1">PANTI ASUHAN AL-KHAIRIYAH </p>
-            <a href="https://www.bing.com/search?pglt=169&q=BUTTON+ICON+BOOTSTRAP&cvid=e53828f686d442009f70ec6f29fcc07f&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQABhAMgYIAhAAGEDSAQg4MjQ0ajBqMagCALACAA&FORM=ANNTA1&PC=HCTS" class="btn btn-success" role="button">Facebook</a>
+            <a href="https://www.facebook.com/m.husni.779857?rdid=VD1ipJ1goIRoPDqv&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F129frADCgf2%2F#" class="btn btn-success" role="button">Facebook</a>
             {{-- <a href="https://www.bing.com/search?pglt=169&q=BUTTON+ICON+BOOTSTRAP&cvid=e53828f686d442009f70ec6f29fcc07f&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQABhAMgYIAhAAGEDSAQg4MjQ0ajBqMagCALACAA&FORM=ANNTA1&PC=HCTS" class="btn btn-success" role="button">Twitter</a> --}}
             <a href="https://www.bing.com/search?pglt=169&q=BUTTON+ICON+BOOTSTRAP&cvid=e53828f686d442009f70ec6f29fcc07f&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQABhAMgYIAhAAGEDSAQg4MjQ0ajBqMagCALACAA&FORM=ANNTA1&PC=HCTS" class="btn btn-success" role="button">Instagram</a>
-            <a href="https://www.bing.com/search?pglt=169&q=BUTTON+ICON+BOOTSTRAP&cvid=e53828f686d442009f70ec6f29fcc07f&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQABhAMgYIAhAAGEDSAQg4MjQ0ajBqMagCALACAA&FORM=ANNTA1&PC=HCTS" class="btn btn-success" role="button">Whatsapp</a>
+            <a href="https://wa.me/6283894333872" class="btn btn-success" role="button">Whatsapp</a>
             <br>
             <small class="text-white">Hak Cipta &COPY; {{ date('Y') }} PANTI ASUHAN AL-KHAIRIYAH. ALL RIGHT RESERVED.</small>
         </div>
