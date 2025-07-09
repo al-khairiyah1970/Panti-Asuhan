@@ -52,6 +52,13 @@ Route::post('/trial/notification', [DonasiMidtransController::class, 'notificati
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login_aksi', [LoginController::class, 'login_aksi'])->name('login_aksi');
 Route::get('/logout_aksi', [LoginController::class, 'logout_aksi'])->name('logout_aksi');
+
+// Lupa Password
+Route::get('/lupa_password', [LoginController::class, 'lupa_password'])->name('lupa_password');
+Route::post('/lupa_password_aksi', [LoginController::class, 'lupa_password_aksi'])->name('lupa_password_aksi');
+Route::get('/ganti_password', [LoginController::class, 'ganti_password'])->name('ganti_password');
+Route::post('/ganti_password_aksi', [LoginController::class, 'ganti_password_aksi'])->name('ganti_password_aksi');
+
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
 

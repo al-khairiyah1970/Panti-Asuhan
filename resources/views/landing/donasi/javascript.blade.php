@@ -213,4 +213,20 @@
         });
     }
 
+    function formatnumber(){
+        const formattedInput = document.getElementById('formattedNominal');
+        const hiddenInput = document.getElementById('inputNominal');
+
+        formattedInput.addEventListener('input', function () {
+            let rawValue = this.value.replace(/\D/g, ''); // Remove all non-digits
+            if (rawValue) {
+                this.value = new Intl.NumberFormat('id-ID').format(rawValue); // Format with dot separator
+                hiddenInput.value = rawValue; // Store raw number in hidden input
+            } else {
+                this.value = '';
+                hiddenInput.value = '';
+            }
+        });
+    }
+
 </script>

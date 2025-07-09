@@ -181,7 +181,7 @@
             </div>
         </div>
     @endif
-            
+
 
 <div class="container mt-5">
 <h2>ZAKAT PROFESI</h2>
@@ -194,12 +194,12 @@
         <label for="pendapatanBulanan" class="form-label">Pendapatan Bulanan (Rp):</label>
         <input type="number" class="form-control" id="pendapatanBulanan" placeholder="masukkan total pendapatan bulanan anda" required>
     </div>
-    
+
     <div class="mb-2">
         <label for="syaratNisab" class="form-label">Nisab Bulanan (Rp):</label>
         <input type="number" class="form-control" id="syaratNisab" placeholder="mohon isi syarat nisab terbaru" required>
     </div>
-    
+
     <button type="submit" class="btn btn-success">Hitung Zakat</button>
 </form>
 

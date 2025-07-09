@@ -1,5 +1,7 @@
 <?php
 
+use App\Mail\ForgotPassword;
+
 /**
  * Generate unique code.
  */
@@ -41,4 +43,23 @@ function ts_conv($ts){
     $timestamp_sec = $ts / 1000;
     $date = date("Y-m-d H:i:s", $timestamp_sec);
     return $date;
+}
+
+/**
+ * Send an email.
+ */
+function sendEmail($data){
+    $send = Mail::to($data['to'])->send(new ForgotPassword($data));
+    if($send){
+        // return true;
+        return [
+            'status' => true,
+            'message' => 'Message has been sent'
+        ];
+    }
+    // return false;
+    return [
+        'status' => false,
+        'message' => "Message could not be sent."
+    ];
 }
