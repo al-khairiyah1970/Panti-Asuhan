@@ -66,7 +66,7 @@ class LandingController extends Controller
     // Anak
     public function anak(){
         $gambar = MasterGambarAnak::all();
-        $anak = MasterAnak::orderBy('created_at', 'desc')->get();
+        $anak = MasterAnak::orderBy('usia', 'asc')->get();
         return view('landing.anak.index', compact('anak', 'gambar'));
     }
 

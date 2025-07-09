@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Midtrans\Notification;
 use Midtrans\Config;
 use Midtrans\Snap;
-use Midtrans\Transaction;
+use Midtrans\Transaction;                               
 use App\Models\MasterDonasi;
 use App\Models\MasterDonatur;
 use App\Models\FinanceDonasi;
