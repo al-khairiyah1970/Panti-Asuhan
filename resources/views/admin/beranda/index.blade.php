@@ -97,7 +97,7 @@
     <main class="container mx-auto mt-5 pb-3">
         <h1>Visi</h1>
         <div class="border-top mt-5 pt-5">
-          <a href="{{ route('add_visi') }}" class="btn btn-outline-success">Tambah Data</a>
+          <!--<a href="{{ route('add_visi') }}" class="btn btn-outline-success">Tambah Data</a>-->
             <div class="container">
                 <div class="row">
                     <div class="col-12">

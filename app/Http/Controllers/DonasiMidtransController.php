@@ -136,7 +136,7 @@ class DonasiMidtransController extends Controller
                 $check = FinanceDonasi::where('order_id', $notif['order_id'])->first();
                 if($check){
                     // Cek apakah sudah settlement, kalau sudah, abaikan notifikasi berikutnya
-                    if($check['transaction_status'] != 'settlement'){
+                    if($check['transaction_status'] !== 'settlement'){
                         $operation = $check->update($notif);
                     }else{
                         // Update data donasi donatur
